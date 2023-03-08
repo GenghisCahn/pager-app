@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Pager app</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="wrapper">
+            <section class="pager-container">
+                <h1 class="pager-text">Pager</h1>
+                <div id="pager-display" class="pager-display">
+                 <!-- pager display rendered here -->
+                </div>
+            </section>
+            <section class="phone-container">
+                <h1>Phone</h1>
+                <div id="phone-display" class="phone-display">
+                   <!-- phone display rendered here --> 
+                </div>
+                <div class="keypad">
+                    <button onclick="keyPressed(1)" class="key">1</button>
+                    <button onclick="keyPressed(2)" class="key">2</button>
+                    <button onclick="keyPressed(3)" class="key">3</button>
+                    <button onclick="keyPressed(4)" class="key">4</button>
+                    <button onclick="keyPressed(5)" class="key">5</button>
+                    <button onclick="keyPressed(6)" class="key">6</button>
+                    <button onclick="keyPressed(7)" class="key">7</button>
+                    <button onclick="keyPressed(8)" class="key">8</button>
+                    <button onclick="keyPressed(9)" class="key">9</button>
+                    <button onclick="keyStarPressed()" class="key">*</button>
+                    <button onclick="keyPressed(0)" class="key">0</button>
+                    <button onclick="keyHashtagPressed()" class="key">#</button>
+                </div>
+                <div class='btn-container'>
+                    <button id="reset-btn" class="reset-btn btn">RESET</button>
+                    <button id="send-btn" class="send-btn btn">SEND</button>
+                </div>
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
